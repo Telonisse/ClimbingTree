@@ -246,7 +246,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8732571550393780347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  jumpForce: 1
   playerIndex: 0
 --- !u!114 &1607110692547570826
 MonoBehaviour:
@@ -349,7 +350,19 @@ MonoBehaviour:
     m_ActionId: bb37bad8-8b56-4c5c-b8af-087f0b5c9dea
     m_ActionName: 'Player/Move[/XInputControllerWindows1/leftStick,/XInputControllerWindows/leftStick]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7310390493342992550}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b2e6bda9-6f54-4aec-851c-bed3deb52315
     m_ActionName: 'Player/Jump[/XInputControllerWindows1/buttonSouth,/XInputControllerWindows/buttonSouth]'
   m_NeverAutoSwitchControlSchemes: 0

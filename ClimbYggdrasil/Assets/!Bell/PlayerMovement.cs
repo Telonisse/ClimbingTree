@@ -5,10 +5,13 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpForce = 1f;
 
     [SerializeField] int playerIndex = 0;
 
     float horizontalMovement;
+
+    bool isFacingRight = true;
 
     private void Start()
     {
@@ -25,12 +28,36 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocityY);
+        if (!isFacingRight && horizontalMovement > 0f)
+        {
+            Flip();
+        }
+        else if (isFacingRight && horizontalMovement < 0f)
+        {
+            Flip();
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         horizontalMovement = context.ReadValue<Vector2>().x;
     }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (context.performed) //isGrounded
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+        }
+    }
+
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+    }
+
     //public int GetPlayerIndex()
     //{
     //    return playerIndex;
