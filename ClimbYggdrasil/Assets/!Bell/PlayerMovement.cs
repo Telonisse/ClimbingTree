@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] LayerMask groundLayer;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 1f;
 
@@ -38,13 +40,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         horizontalMovement = context.ReadValue<Vector2>().x;
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed) //isGrounded
+        if (context.performed && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
         }
