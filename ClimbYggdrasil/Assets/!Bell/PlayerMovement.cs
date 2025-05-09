@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator animator;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float moveSpeed = 5f;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         if (playerIndex == 0)
         {
             GetComponentInChildren<Camera>().rect = new Rect(0, 0, 0.5f, 1);
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+        animator.SetFloat("Speed", Mathf.Abs(rb.linearVelocityX));
     }
 
     private bool IsGrounded()
