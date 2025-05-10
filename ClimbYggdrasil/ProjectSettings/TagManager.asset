@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: HiddenCollider
+    uniqueID: 1741913759
+    locked: 0
   - name: BackgroundSky
     uniqueID: 2846571637
     locked: 0
