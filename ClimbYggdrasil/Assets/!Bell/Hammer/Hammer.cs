@@ -8,12 +8,12 @@ public class Hammer : MonoBehaviour
         if (other.tag == "P1")
         {
             Destroy(this.gameObject);
-            //SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);
         }
         if (other.tag == "P2")
         {
             Destroy(this.gameObject);
-            //SceneManager.LoadScene(3);
+            SceneManager.LoadScene(3);
         }
     }
 }
