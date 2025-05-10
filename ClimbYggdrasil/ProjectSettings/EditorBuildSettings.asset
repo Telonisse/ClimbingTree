@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/meow.unity
     guid: d12460581270a584586d1dd40e9a38c1
   - enabled: 1
-    path: Assets/!Thea/Scenes/TheaScene.unity
-    guid: 7b638487bb6f09d4a8800d0389847836
+    path: Assets/Scenes/Credits.unity
+    guid: 7ce2b9391d952fc47b0406fbced92c44
+  - enabled: 1
+    path: Assets/Scenes/EndP1.unity
+    guid: 74f8716c7f2001c4e8ec3a6d1957ceeb
+  - enabled: 1
+    path: Assets/Scenes/EndP2.unity
+    guid: 184429b22b01eef4ab69bfbcbcb1ba29
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
