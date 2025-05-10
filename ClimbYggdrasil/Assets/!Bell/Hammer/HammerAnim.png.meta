@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 550cefbc29c6cdb429e971866c2ee000
+guid: 0a096b7fdca0488478c29f9716010117
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5393448996881579246
-    second: Hammer_0
+      213: 3655049711458165609
+    second: HammerAnim_0
+  - first:
+      213: 7984349719057313992
+    second: HammerAnim_1
+  - first:
+      213: -5168828636319992215
+    second: HammerAnim_2
+  - first:
+      213: -695447624591965116
+    second: HammerAnim_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hammer_0
+      name: HammerAnim_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 2
-        width: 13
-        height: 13
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eec3055794169da40800000000000000
-      internalID: 5393448996881579246
+      spriteID: 963abd7e85859b230800000000000000
+      internalID: 3655049711458165609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HammerAnim_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0b6ee34cb1ece60800000000000000
+      internalID: 7984349719057313992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HammerAnim_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966b74badb1a448b0800000000000000
+      internalID: -5168828636319992215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HammerAnim_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4448e40f1164956f0800000000000000
+      internalID: -695447624591965116
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 1253b289fd959a74d858b496eb36f72b
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hammer_0: 5393448996881579246
+      HammerAnim_0: 3655049711458165609
+      HammerAnim_1: 7984349719057313992
+      HammerAnim_2: -5168828636319992215
+      HammerAnim_3: -695447624591965116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
