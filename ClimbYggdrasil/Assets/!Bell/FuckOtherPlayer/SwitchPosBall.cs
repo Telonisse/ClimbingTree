@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class SwitchPosBall : MonoBehaviour
+public class SwitchPosBall : Powerup
 {
     GameObject player1;
     GameObject player2;

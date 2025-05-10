@@ -52,8 +52,11 @@ TagManager:
   - name: Ground
     uniqueID: 1008112879
     locked: 0
-  - name: Foreground
+  - name: Wood
     uniqueID: 3987382891
+    locked: 0
+  - name: Foreground
+    uniqueID: 1113134279
     locked: 0
   - name: Player
     uniqueID: 1157248469

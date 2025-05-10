@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class InvertControllsBall : MonoBehaviour
+public class InvertControllsBall : Powerup
 {
     PlayerMovement playerMovement;
     private void OnTriggerEnter2D(Collider2D other)
