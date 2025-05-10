@@ -183,7 +183,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   moveSpeed: 5
-  jumpForce: 5
+  jumpForce: 9.5
   playerIndex: 0
   cam: {fileID: 268686394442415554}
 --- !u!114 &496820216165007837
