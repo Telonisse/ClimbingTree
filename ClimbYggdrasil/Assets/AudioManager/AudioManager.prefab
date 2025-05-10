@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070281069008310658}
   - component: {fileID: 1070281069008310657}
+  - component: {fileID: 4165620194353257920}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   sounds:
   - name: Jump
     clip: {fileID: 8300000, guid: ac661edcc722a38479ff865b7ff5e27f, type: 3}
-    volume: 0.084
+    volume: 0.085
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -63,3 +64,11 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
+--- !u!81 &4165620194353257920
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070281069008310659}
+  m_Enabled: 1
