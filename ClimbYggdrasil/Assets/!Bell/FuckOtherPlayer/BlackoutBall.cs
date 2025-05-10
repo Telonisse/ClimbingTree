@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BlackoutBall : MonoBehaviour
+public class BlackoutBall : Powerup
 {
     private void OnTriggerEnter2D(Collider2D other)
     {

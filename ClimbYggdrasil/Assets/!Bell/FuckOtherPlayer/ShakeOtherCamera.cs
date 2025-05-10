@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class ShakeOtherCamera : MonoBehaviour
+public class ShakeOtherCamera : Powerup
 {
     PlayerMovement playerMovement;
     private void OnTriggerEnter2D(Collider2D other)
