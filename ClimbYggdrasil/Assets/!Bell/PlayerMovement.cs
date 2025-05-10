@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
         animator.SetFloat("Speed", Mathf.Abs(rb.linearVelocityX));
+
+        animator.SetBool("Jump", !IsGrounded());
     }
 
     private bool IsGrounded()
@@ -67,13 +69,4 @@ public class PlayerMovement : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-
-    //public int GetPlayerIndex()
-    //{
-    //    return playerIndex;
-    //}
-    //public void SetInputVector(Vector2 value)
-    //{
-    //    horizontalMovement = value.x;
-    //}
 }
