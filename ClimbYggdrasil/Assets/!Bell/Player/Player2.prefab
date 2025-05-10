@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6000447243253361863}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,37 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb2266d0b2146a4682c185acb721fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shouldShake: 0
   cam: {fileID: 6465122554308666771}
   player: {fileID: 8502692984699230331}
   speed: 0.5
   offset: {x: 0, y: 0, z: -10}
-  shakeAmount: {x: 0, y: 1, z: 0}
-  shakePower:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -8.984778
-      outSlope: -8.984778
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.028538411
-    - serializedVersion: 3
-      time: 0.99871826
-      value: -0.002357483
-      inSlope: -2.5630152
-      outSlope: -2.5630152
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.09632703
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  shakeSpeed: 2
+  shakeAmount: 0.5
+  shakeDuration: 0.5
 --- !u!1 &418042150617790456
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +63,7 @@ GameObject:
   - component: {fileID: 1977360022313745737}
   m_Layer: 0
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +96,7 @@ GameObject:
   - component: {fileID: 4273432092697161423}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +228,7 @@ GameObject:
   - component: {fileID: 5834822938906005824}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,7 +454,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 6000447243253361863}
         m_TargetAssemblyTypeName: CameraFollow, Assembly-CSharp
-        m_MethodName: Shake
+        m_MethodName: StartShake
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
