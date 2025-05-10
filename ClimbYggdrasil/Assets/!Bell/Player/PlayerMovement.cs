@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] int playerIndex = 0;
 
+    [SerializeField] Camera cam;
+
     float horizontalMovement;
 
     bool isFacingRight = true;
@@ -22,16 +24,19 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         if (playerIndex == 0)
         {
-            GetComponentInChildren<Camera>().rect = new Rect(0, 0, 0.5f, 1);
+            cam.rect = new Rect(0, 0, 0.5f, 1);
         }
         else if (playerIndex == 1)
         {
-            GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0, 0.5f, 1);
+            cam.rect = new Rect(0.5f, 0, 0.5f, 1);
         }
+    }
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocityY);
     }
     private void Update()
     {
-        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocityY);
         if (!isFacingRight && horizontalMovement > 0f)
         {
             Flip();
