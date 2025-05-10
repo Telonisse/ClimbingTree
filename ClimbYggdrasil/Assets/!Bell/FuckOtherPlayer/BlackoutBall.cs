@@ -1,19 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Hammer : MonoBehaviour
+public class BlackoutBall : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "P1")
         {
+            FindFirstObjectByType<Blackout>().BlackoutForP2();
             Destroy(this.gameObject);
-            //SceneManager.LoadScene(2);
         }
         if (other.tag == "P2")
         {
+            FindFirstObjectByType<Blackout>().BlackoutForP1();
             Destroy(this.gameObject);
-            //SceneManager.LoadScene(3);
         }
     }
 }

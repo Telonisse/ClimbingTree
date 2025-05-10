@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6000447243253361863}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 1977360022313745737}
   m_Layer: 0
   m_Name: GroundCheck
-  m_TagString: Player
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4273432092697161423}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Player
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 5834822938906005824}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player
+  m_TagString: P2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

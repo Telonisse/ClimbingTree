@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
 
     bool isFacingRight = true;
 
+    [Header("Fuck for players")]
+    bool invert = false;
+    bool freeze = false;
+    [SerializeField] float invertTime = 3f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,7 +39,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocityY);
+        if (invert)
+        {
+            rb.linearVelocity = new Vector2(-horizontalMovement * moveSpeed, rb.linearVelocityY);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocityY);
+        }
     }
     private void Update()
     {
@@ -57,13 +70,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        horizontalMovement = context.ReadValue<Vector2>().x;
+        if (!freeze)
+        {
+            horizontalMovement = context.ReadValue<Vector2>().x;
+        }
+        else
+        {
+            horizontalMovement = 0;
+        }
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed && IsGrounded())
+        if (context.performed && IsGrounded() && !freeze)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+            FindFirstObjectByType<AudioManager>().Play("Jump");
         }
     }
 
@@ -73,5 +94,39 @@ public class PlayerMovement : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    //fuck for players
+    public int GetPlayerIndex()
+    {
+        return playerIndex;
+    }
+
+    public void InvertControlls()
+    {
+        StartCoroutine(Invert());
+    }
+
+    IEnumerator Invert()
+    {
+        invert = true;
+        yield return new WaitForSecondsRealtime(invertTime);
+        invert = false;
+    }
+
+    public void Respawn()
+    {
+        transform.position = Vector3.zero;
+    }
+    public void FreezePlayer()
+    {
+        StartCoroutine(Freeze());
+    }
+
+    IEnumerator Freeze()
+    {
+        freeze = true;
+        yield return new WaitForSecondsRealtime(invertTime);
+        freeze = false;
     }
 }
