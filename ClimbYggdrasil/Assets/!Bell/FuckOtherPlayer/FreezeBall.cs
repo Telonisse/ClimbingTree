@@ -11,6 +11,7 @@ public class FreezeBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 1);
             playerMovement.FreezePlayer();
+            FindFirstObjectByType<AudioManager>().Play("Freeze");
             Destroy(this.gameObject);
         }
         if (other.tag == "P2")
@@ -18,6 +19,7 @@ public class FreezeBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 0);
             playerMovement.FreezePlayer();
+            FindFirstObjectByType<AudioManager>().Play("Freeze");
             Destroy(this.gameObject);
         }
     }

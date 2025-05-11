@@ -11,6 +11,7 @@ public class RespawnBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 1);
             playerMovement.Respawn();
+            FindFirstObjectByType<AudioManager>().Play("Respawn");
             Destroy(this.gameObject);
         }
         if (other.tag == "P2")
@@ -18,6 +19,7 @@ public class RespawnBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 0);
             playerMovement.Respawn();
+            FindFirstObjectByType<AudioManager>().Play("Respawn");
             Destroy(this.gameObject);
         }
     }

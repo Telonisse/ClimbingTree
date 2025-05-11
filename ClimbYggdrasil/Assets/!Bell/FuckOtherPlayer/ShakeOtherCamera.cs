@@ -11,6 +11,7 @@ public class ShakeOtherCamera : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 1);
             playerMovement.transform.parent.GetComponentInChildren<CameraFollow>().StartShake();
+            FindFirstObjectByType<AudioManager>().Play("Shake");
             Destroy(this.gameObject);
         }
         if (other.tag == "P2")
@@ -18,6 +19,7 @@ public class ShakeOtherCamera : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 0);
             playerMovement.transform.parent.GetComponentInChildren<CameraFollow>().StartShake();
+            FindFirstObjectByType<AudioManager>().Play("Shake");
             Destroy(this.gameObject);
         }
     }

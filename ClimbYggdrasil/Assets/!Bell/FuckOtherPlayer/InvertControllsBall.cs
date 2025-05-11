@@ -11,6 +11,7 @@ public class InvertControllsBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 1);
             playerMovement.InvertControlls();
+            FindFirstObjectByType<AudioManager>().Play("Invert");
             Destroy(this.gameObject);
         }
         if (other.tag == "P2")
@@ -18,6 +19,7 @@ public class InvertControllsBall : Powerup
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 0);
             playerMovement.InvertControlls();
+            FindFirstObjectByType<AudioManager>().Play("Invert");
             Destroy(this.gameObject);
         }
     }

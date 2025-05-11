@@ -20,6 +20,7 @@ public class SwitchPosBall : Powerup
             player1.transform.position = p2Pos;
             player2.transform.position = p1Pos;
 
+            FindFirstObjectByType<AudioManager>().Play("Switch");
             Destroy(this.gameObject);
         }
     }
