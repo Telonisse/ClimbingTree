@@ -81,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1157248469
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -1753449832276896209, guid: 36470b4223867134991148a1a9618e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -519,5 +519,5 @@ MonoBehaviour:
   player: {fileID: 198324947685201995}
   speed: 0.5
   offset: {x: 0, y: 0, z: -10}
-  shakeAmount: 0.5
-  shakeDuration: 0.5
+  shakeAmount: 0.7
+  shakeDuration: 2

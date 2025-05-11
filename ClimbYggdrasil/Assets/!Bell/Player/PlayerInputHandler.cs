@@ -27,7 +27,7 @@ public class PlayerInputHandler : MonoBehaviour
         playerInputManager.playerPrefab = player2;
         InputDevice device1 = gamepads[playerIndex];
         PlayerInput playerInput1 = playerInputManager.JoinPlayer(playerIndex, playerIndex, "Player", device1);
-        FindAnyObjectByType<DistanceCounter>().SetP2(playerInput.gameObject);
+        FindAnyObjectByType<DistanceCounter>().SetP2(playerInput1.gameObject);
         //var index = input.playerIndex;
         //var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         //playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == index);

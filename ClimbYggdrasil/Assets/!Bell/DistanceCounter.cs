@@ -16,6 +16,10 @@ public class DistanceCounter : MonoBehaviour
         {
             float distance = Mathf.RoundToInt(hammer.transform.position.y - p1.transform.position.y);
             //Vector3.Distance(p1.transform.position, hammer.transform.position);
+            if (distance < 0)
+            {
+                distance = 0;
+            }
 
             textP1.text = distance.ToString() + "m";
         }
@@ -23,6 +27,10 @@ public class DistanceCounter : MonoBehaviour
         {
             float distance = Mathf.RoundToInt(hammer.transform.position.y - p2.transform.position.y);
             //Vector3.Distance(p2.transform.position, hammer.transform.position);
+            if (distance < 0)
+            {
+                distance = 0;
+            }
 
             textP2.text = distance.ToString() + "m";
         }
