@@ -8,6 +8,7 @@ public class FreezeBall : Powerup
     {
         if (other.tag == "P1")
         {
+            FindFirstObjectByType<AudioManager>().Play("Pickup");
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 1);
             playerMovement.FreezePlayer();
@@ -16,6 +17,7 @@ public class FreezeBall : Powerup
         }
         if (other.tag == "P2")
         {
+            FindFirstObjectByType<AudioManager>().Play("Pickup");
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
             playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == 0);
             playerMovement.FreezePlayer();

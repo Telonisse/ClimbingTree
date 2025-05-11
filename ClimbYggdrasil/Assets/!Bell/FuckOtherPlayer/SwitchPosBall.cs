@@ -9,6 +9,7 @@ public class SwitchPosBall : Powerup
     {
         if (other.tag == "P1" || other.tag == "P2")
         {
+            FindFirstObjectByType<AudioManager>().Play("Pickup");
             var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
 
             player2 = players.FirstOrDefault(m => m.GetPlayerIndex() == 1).gameObject;
