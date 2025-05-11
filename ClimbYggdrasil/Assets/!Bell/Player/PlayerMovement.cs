@@ -141,6 +141,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "P1" || collision.tag == "P2")
         {
+            FindFirstObjectByType<AudioManager>().Play("Knockback");
             Vector2 direction = (transform.position - collision.transform.position).normalized;
 
             knockbackVector = new Vector2(direction.x * knockbackForce, direction.y * knockbackForce * 0.01f);

@@ -6,14 +6,14 @@ public class BlackoutBall : Powerup
     {
         if (other.tag == "P1")
         {
-            FindFirstObjectByType<Blackout>().BlackoutForP2();
             FindFirstObjectByType<AudioManager>().Play("Blackout");
+            FindFirstObjectByType<Blackout>().BlackoutForP2();
             Destroy(this.gameObject);
         }
         if (other.tag == "P2")
         {
-            FindFirstObjectByType<Blackout>().BlackoutForP1();
             FindFirstObjectByType<AudioManager>().Play("Blackout");
+            FindFirstObjectByType<Blackout>().BlackoutForP1();
             Destroy(this.gameObject);
         }
     }
