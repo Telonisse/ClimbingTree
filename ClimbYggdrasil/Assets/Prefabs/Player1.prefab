@@ -517,7 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 268686394442415554}
   player: {fileID: 198324947685201995}
-  speed: 0.5
+  speed: 0.3
   offset: {x: 0, y: 0, z: -10}
   shakeAmount: 0.7
   shakeDuration: 2
