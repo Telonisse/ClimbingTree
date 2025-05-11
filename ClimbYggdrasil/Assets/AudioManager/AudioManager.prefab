@@ -64,6 +64,42 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
+  - name: Blackout
+    clip: {fileID: 8300000, guid: ecea8097e034e2642bb55a9807d16d3c, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Freeze
+    clip: {fileID: 8300000, guid: 7206c05da5c65154f870d248dc9400e8, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Freeze
+    clip: {fileID: 8300000, guid: 7206c05da5c65154f870d248dc9400e8, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Respawn
+    clip: {fileID: 8300000, guid: 9b0094d6c58f44c47be450912724fbcd, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Respawn
+    clip: {fileID: 8300000, guid: 9b0094d6c58f44c47be450912724fbcd, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Switch
+    clip: {fileID: 8300000, guid: 6dd9f05c63cf1a64c85670bf398fd3a8, type: 3}
+    volume: 0.084
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
 --- !u!81 &4165620194353257920
 AudioListener:
   m_ObjectHideFlags: 0
