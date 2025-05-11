@@ -52,51 +52,81 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
-  - name: Select
-    clip: {fileID: 8300000, guid: bbd59f8e7516dbe488529329ea042b47, type: 3}
-    volume: 0.084
+  - name: Pickup
+    clip: {fileID: 8300000, guid: fc94182ecbca8c24bab08693ee6bf9a0, type: 3}
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
-  - name: Pickup
-    clip: {fileID: 8300000, guid: fc94182ecbca8c24bab08693ee6bf9a0, type: 3}
-    volume: 0.084
+  - name: Select
+    clip: {fileID: 8300000, guid: bbd59f8e7516dbe488529329ea042b47, type: 3}
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - name: Blackout
     clip: {fileID: 8300000, guid: ecea8097e034e2642bb55a9807d16d3c, type: 3}
-    volume: 0.084
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - name: Freeze
     clip: {fileID: 8300000, guid: 7206c05da5c65154f870d248dc9400e8, type: 3}
-    volume: 0.084
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
-  - name: Freeze
-    clip: {fileID: 8300000, guid: 7206c05da5c65154f870d248dc9400e8, type: 3}
-    volume: 0.084
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - name: Respawn
-    clip: {fileID: 8300000, guid: 9b0094d6c58f44c47be450912724fbcd, type: 3}
-    volume: 0.084
+  - name: Invert
+    clip: {fileID: 8300000, guid: 8c8b65d9a8728e0458ce7f09516a3bda, type: 3}
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - name: Respawn
     clip: {fileID: 8300000, guid: 9b0094d6c58f44c47be450912724fbcd, type: 3}
-    volume: 0.084
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Shake
+    clip: {fileID: 8300000, guid: 04533f062aa88c7408e216c0f0b48cf8, type: 3}
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - name: Switch
     clip: {fileID: 8300000, guid: 6dd9f05c63cf1a64c85670bf398fd3a8, type: 3}
-    volume: 0.084
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: a3c07a315829ae149b1e8964a8b45a11, type: 3}
+    volume: 0.3
+    pitch: 1
+    Loop: 1
+    source: {fileID: 0}
+  - name: Knockback
+    clip: {fileID: 8300000, guid: 8aadeb64cf0c49843815eee704003ccc, type: 3}
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Hammer
+    clip: {fileID: 8300000, guid: cf0a2b5ccd70d1144ae8909e964fa126, type: 3}
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: CountDown
+    clip: {fileID: 8300000, guid: cf66516fad53d884b88d318bf3bf3245, type: 3}
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Duuu
+    clip: {fileID: 8300000, guid: ab39ad969194bc648949151e801c4c6c, type: 3}
+    volume: 0.5
     pitch: 1
     Loop: 0
     source: {fileID: 0}

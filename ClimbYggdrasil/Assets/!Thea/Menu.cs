@@ -5,7 +5,7 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         FindFirstObjectByType<AudioManager>().Play("Select");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     public void Credits()

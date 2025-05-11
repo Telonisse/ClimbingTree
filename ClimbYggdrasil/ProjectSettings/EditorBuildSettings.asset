@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndP2.unity
     guid: 184429b22b01eef4ab69bfbcbcb1ba29
+  - enabled: 1
+    path: Assets/Scenes/CountDown.unity
+    guid: 068cbc8ceab18c44093024f2f1b8b424
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
