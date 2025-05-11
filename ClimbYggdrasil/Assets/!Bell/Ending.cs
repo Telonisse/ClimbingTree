@@ -12,7 +12,10 @@ public class Ending : MonoBehaviour
 
     IEnumerator End()
     {
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(1);
+        FindFirstObjectByType<AudioManager>().Play("Boom1");
+        FindFirstObjectByType<AudioManager>().Play("Boom2");
+        yield return new WaitForSecondsRealtime(2);
         SceneManager.LoadScene(0);
     }
 }
