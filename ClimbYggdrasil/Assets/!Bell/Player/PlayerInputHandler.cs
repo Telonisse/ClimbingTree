@@ -22,10 +22,12 @@ public class PlayerInputHandler : MonoBehaviour
         InputDevice device = gamepads[playerIndex];
         playerInputManager.playerPrefab = player1;
         PlayerInput playerInput = playerInputManager.JoinPlayer(playerIndex, playerIndex, "Player", device);
+        FindAnyObjectByType<DistanceCounter>().SetP1(playerInput.gameObject);
         playerIndex++;
         playerInputManager.playerPrefab = player2;
         InputDevice device1 = gamepads[playerIndex];
         PlayerInput playerInput1 = playerInputManager.JoinPlayer(playerIndex, playerIndex, "Player", device1);
+        FindAnyObjectByType<DistanceCounter>().SetP2(playerInput.gameObject);
         //var index = input.playerIndex;
         //var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         //playerMovement = players.FirstOrDefault(m => m.GetPlayerIndex() == index);
