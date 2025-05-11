@@ -54,7 +54,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Pickup
     clip: {fileID: 8300000, guid: fc94182ecbca8c24bab08693ee6bf9a0, type: 3}
-    volume: 0.5
+    volume: 0.338
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -72,7 +72,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Freeze
     clip: {fileID: 8300000, guid: 7206c05da5c65154f870d248dc9400e8, type: 3}
-    volume: 0.5
+    volume: 0.797
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -126,6 +126,18 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Duuu
     clip: {fileID: 8300000, guid: ab39ad969194bc648949151e801c4c6c, type: 3}
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Boom1
+    clip: {fileID: 8300000, guid: 9fb39a598ab5f6741bd43dc73931c323, type: 3}
+    volume: 0.5
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: Boom2
+    clip: {fileID: 8300000, guid: 4fb808b3ee6a26a4fb2a45024de6d562, type: 3}
     volume: 0.5
     pitch: 1
     Loop: 0
